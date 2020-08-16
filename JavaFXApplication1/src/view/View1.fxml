@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.View1Controller">
+   <children>
+      <Text layoutX="140.0" layoutY="122.0" stroke="#d1ff05" strokeType="OUTSIDE" strokeWidth="6.0" text="GAMES IA" textAlignment="CENTER" wrappingWidth="318.767578125">
+         <font>
+            <Font name="Lucida Console" size="64.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnTicTacToe" layoutX="257.0" layoutY="200.0" mnemonicParsing="false" onAction="#click_btn_TTT" text="TicTacToe" />
+      <Button fx:id="btnSudoku" layoutX="264.0" layoutY="257.0" mnemonicParsing="false" onAction="#click_btn_sudoku" text="Sudoku" />
+   </children>
+</AnchorPane>

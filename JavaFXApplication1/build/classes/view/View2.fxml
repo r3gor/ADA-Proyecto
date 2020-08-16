@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.View2Controller">
+   <children>
+      <GridPane layoutX="131.0" layoutY="154.0" prefHeight="206.0" prefWidth="232.0" style="-fx-grid-lines-visible: true; -fx-background-color: yellow;">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="99.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="97.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="81.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="79.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="80.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="c10" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c11" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c12" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c00" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c01" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c02" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c20" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c21" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+            <Button fx:id="c22" mnemonicParsing="false" onAction="#click_casilla" style="-fx-background-color: 023;" text="-" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Lucida Console" size="35.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <Label fx:id="msj_ttt" layoutX="131.0" layoutY="407.0" prefHeight="102.0" prefWidth="520.0" text="¡A jugar!">
+         <font>
+            <Font name="CSD16" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_winner" layoutX="540.0" layoutY="223.0" text="-">
+         <font>
+            <Font name="Lucida Console" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="41.0" text="Tic-Tac-Toe" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Unispace-Bold" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="482.0" layoutY="154.0" text="WINNER" textFill="#6ec300">
+         <font>
+            <Font name="Unispace-Bold" size="47.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
