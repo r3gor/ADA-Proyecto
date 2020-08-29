@@ -20,7 +20,7 @@ import model.Pair;
  *
  * @author rogrp
  */
-public class View2Controller implements Initializable {
+public class View3Controller implements Initializable {
 
     private TicTacToe ttt = new TicTacToe();
     private boolean vsBot = true;
@@ -70,6 +70,7 @@ public class View2Controller implements Initializable {
             System.out.println("boton presionado: (0,0)");
             x = 0;
             y = 0;
+            
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c00.setText(String.valueOf(player));
@@ -183,45 +184,6 @@ public class View2Controller implements Initializable {
             enJuego = false;
         }
 
-        if (this.vsBot) {
-            char ai = ttt.getTurno();
-            char p = ai == 'X' ? 'O' : 'X';
-            Pair move = new Pair(-1, -1);
-            ttt.setSmartValue(ai, p, move);
-            if (move.x == 0 && move.y == 0) {
-                c00.setText(String.valueOf(ai));
-            }
-            if (move.x == 0 && move.y == 1) {
-                c01.setText(String.valueOf(ai));
-            }
-            if (move.x == 0 && move.y == 2) {
-                c02.setText(String.valueOf(ai));
-            }
-            if (move.x == 1 && move.y == 0) {
-                c10.setText(String.valueOf(ai));
-            }
-            if (move.x == 1 && move.y == 1) {
-                c11.setText(String.valueOf(ai));
-            }
-            if (move.x == 1 && move.y == 2) {
-                c12.setText(String.valueOf(ai));
-            }
-            if (move.x == 2 && move.y == 0) {
-                c20.setText(String.valueOf(ai));
-            }
-            if (move.x == 2 && move.y == 1) {
-                c21.setText(String.valueOf(ai));
-            }
-            if (move.x == 2 && move.y == 2) {
-                c22.setText(String.valueOf(ai));
-            }
-
-            if (ttt.getWinner() != ttt.VACIO) {
-                lbl_winner.setText(String.valueOf(ttt.getWinner()));
-                msj_ttt.setText("El juego a terminado :)");
-                enJuego = false;
-            }
-        }
 
     }
 }

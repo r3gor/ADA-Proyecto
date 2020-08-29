@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.View1Controller">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #501212;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.View1Controller">
    <children>
-      <Text layoutX="140.0" layoutY="122.0" stroke="#d1ff05" strokeType="OUTSIDE" strokeWidth="6.0" text="GAMES IA" textAlignment="CENTER" wrappingWidth="318.767578125">
-         <font>
-            <Font name="Lucida Console" size="64.0" />
-         </font>
-      </Text>
-      <Button fx:id="btnTicTacToe" layoutX="257.0" layoutY="200.0" mnemonicParsing="false" onAction="#click_btn_TTT" text="TicTacToe" />
-      <Button fx:id="btnSudoku" layoutX="264.0" layoutY="257.0" mnemonicParsing="false" onAction="#click_btn_sudoku" text="Sudoku" />
+      <AnchorPane layoutX="-1.0" prefHeight="400.0" prefWidth="342.0" style="-fx-background-color: #751E0B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text layoutX="12.0" layoutY="86.0" stroke="#d1ff05" strokeType="OUTSIDE" strokeWidth="6.0" text="GAMES IA" textAlignment="CENTER" wrappingWidth="318.767578125" AnchorPane.bottomAnchor="300.5" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="11.232421875" AnchorPane.topAnchor="35.5">
+               <font>
+                  <Font name="Lucida Console" size="64.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnTicTacToe" layoutX="111.0" layoutY="175.0" mnemonicParsing="false" onAction="#click_btn_TTT" style="-fx-background-color: #E45652;" text="TicTacToe vs IA" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="134.0" />
+            <Button fx:id="btnMultijugador" layoutX="86.0" layoutY="280.0" mnemonicParsing="false" onAction="#click_btn_multijugador" style="-fx-background-color: #E45652;" text="Tic Tac Toe multijugador" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="109.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="178.0" fitWidth="167.0" layoutX="391.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="176.0" AnchorPane.rightAnchor="56.51300048828125" AnchorPane.topAnchor="46.0">
+         <image>
+            <Image url="@../img/SM1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="379.0" layoutY="230.0" prefHeight="156.0" prefWidth="207.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="379.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="230.0">
+         <children>
+            <Label layoutX="21.0" layoutY="19.0" text="INTEGRANTES:" textFill="#cccccc" AnchorPane.bottomAnchor="120.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="19.0" />
+            <Label layoutX="17.0" layoutY="37.0" text="+Galarza Arévalo, Jonathan" textFill="#cccccc" AnchorPane.bottomAnchor="102.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="37.0" />
+            <Label layoutX="17.0" layoutY="54.0" text="+Moquillaza Alcarraz, Santiago" textFill="#cccccc" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="54.0" />
+            <Label layoutX="17.0" layoutY="37.0" text="+Ramos Paredes, Roger" textFill="#cccccc" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="37.0" />
+            <Label layoutX="17.0" layoutY="87.0" text="+Rios Jaimes, Jhonel" textFill="#cccccc" AnchorPane.bottomAnchor="52.0" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="87.0" />
+            <Label layoutX="18.0" layoutY="104.0" text="+Villarreal Doroteo,Omar" textFill="#cccccc" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="104.0" />
+            <Label layoutX="18.0" layoutY="114.0" text="+Yarlequé Rios, Maurizio" textFill="#cccccc" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="114.0" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

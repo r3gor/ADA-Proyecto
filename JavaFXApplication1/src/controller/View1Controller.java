@@ -28,7 +28,7 @@ public class View1Controller implements Initializable {
     @FXML
     private Button btnTicTacToe;
     @FXML
-    private Button btnSudoku;
+    private Button btnMultijugador;
 
     /**
      * Initializes the controller class.
@@ -60,8 +60,24 @@ public class View1Controller implements Initializable {
     }
 
     @FXML
-    private void click_btn_sudoku(ActionEvent event) {
-        System.out.println("Opcion escogida: Sudoku.");
+    private void click_btn_multijugador(ActionEvent event) {
+        System.out.println("Opcion escogida: Multijugador TicTacToe.");
+        Stage primaryStage2 = new Stage();
+        try {
+            FXMLLoader loader2 = new FXMLLoader();
+            loader2.setLocation(Main.class.getResource("/view/View3.fxml"));
+            // Cargo la ventana
+            Pane ventana = (Pane) loader2.load();
+
+            // Cargo el scene
+            Scene scene2 = new Scene(ventana);
+
+            // Seteo la scene y la muestro
+            primaryStage2.setScene(scene2);
+            primaryStage2.show();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }
