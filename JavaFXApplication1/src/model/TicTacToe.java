@@ -77,7 +77,7 @@ public class TicTacToe {
             printBoard();
             return true;
         } else {
-            System.out.println("[Warning] La casilla (" + r + ", " + c + ") " + "no esta vacia.");
+            System.out.println("[Warning] La casilla (" + r + ", " + c + ") " + "no está vacía.");
             return false;
         }
     }
