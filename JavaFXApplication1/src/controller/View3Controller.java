@@ -67,7 +67,7 @@ public class View3Controller implements Initializable {
         int x, y;
 
         if (c00 == bs) {
-            System.out.println("boton presionado: (0,0)");
+            System.out.println("botón presionado: (0,0)");
             x = 0;
             y = 0;
             
@@ -75,112 +75,112 @@ public class View3Controller implements Initializable {
             if (ttt.setValue(x, y, player)) {
                 c00.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
 
         if (c01 == bs) {
-            System.out.println("boton presionado: (0,1)");
+            System.out.println("botón presionado: (0,1)");
             x = 0;
             y = 1;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c01.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
 
         if (c02 == bs) {
-            System.out.println("boton presionado: (0,2)");
+            System.out.println("botón presionado: (0,2)");
             x = 0;
             y = 2;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c02.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
         if (c10 == bs) {
-            System.out.println("boton presionado: (1,0)");
+            System.out.println("botón presionado: (1,0)");
             x = 1;
             y = 0;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c10.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
         if (c11 == bs) {
-            System.out.println("boton presionado: (1,1)");
+            System.out.println("botón presionado: (1,1)");
             x = 1;
             y = 1;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c11.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
         if (c12 == bs) {
-            System.out.println("boton presionado: (1,2)");
+            System.out.println("botón presionado: (1,2)");
             x = 1;
             y = 2;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c12.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
         if (c20 == bs) {
-            System.out.println("boton presionado: (2,0)");
+            System.out.println("botón presionado: (2,0)");
             x = 2;
             y = 0;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c20.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
         if (c21 == bs) {
-            System.out.println("boton presionado: (2,1)");
+            System.out.println("botón presionado: (2,1)");
             x = 2;
             y = 1;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c21.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
         if (c22 == bs) {
-            System.out.println("boton presionado: (2,2)");
+            System.out.println("botón presionado: (2,2)");
             x = 2;
             y = 2;
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c22.setText(String.valueOf(player));
             } else {
-                msj_ttt.setText("¡La casilla ya esta seleccionada!");
+                msj_ttt.setText("¡La casilla ya está seleccionada!");
                 return;
             }
         }
 
         if (ttt.getWinner() != ttt.VACIO) {
             lbl_winner.setText(String.valueOf(ttt.getWinner()));
-            msj_ttt.setText("El juego a terminado :)");
+            msj_ttt.setText("El juego ha terminado :)");
             enJuego = false;
         }
 
