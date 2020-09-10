@@ -40,7 +40,7 @@ public class View1Controller implements Initializable {
 
     @FXML
     private void click_btn_TTT(ActionEvent event) {
-        System.out.println("Opcion escogida: TicTacToe.");
+        System.out.println("Opción escogida: TicTacToe.");
         Stage primaryStage = new Stage();
         try {
             FXMLLoader loader = new FXMLLoader();
@@ -61,7 +61,7 @@ public class View1Controller implements Initializable {
 
     @FXML
     private void click_btn_multijugador(ActionEvent event) {
-        System.out.println("Opcion escogida: Multijugador TicTacToe.");
+        System.out.println("Opción escogida: Multijugador TicTacToe.");
         Stage primaryStage2 = new Stage();
         try {
             FXMLLoader loader2 = new FXMLLoader();
