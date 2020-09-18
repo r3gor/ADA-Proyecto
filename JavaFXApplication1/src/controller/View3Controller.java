@@ -70,7 +70,7 @@ public class View3Controller implements Initializable {
             System.out.println("botón presionado: (0,0)");
             x = 0;
             y = 0;
-            
+
             char player = ttt.getTurno();
             if (ttt.setValue(x, y, player)) {
                 c00.setText(String.valueOf(player));
@@ -177,13 +177,14 @@ public class View3Controller implements Initializable {
                 return;
             }
         }
+        System.out.println("WINNER: " + ttt.getWinner());
 
         if (ttt.getWinner() != ttt.VACIO) {
             lbl_winner.setText(String.valueOf(ttt.getWinner()));
             msj_ttt.setText("El juego ha terminado :)");
             enJuego = false;
+            return;
         }
-
 
     }
 }

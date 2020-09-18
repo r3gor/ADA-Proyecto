@@ -181,6 +181,7 @@ public class View2Controller implements Initializable {
             lbl_winner.setText(String.valueOf(ttt.getWinner()));
             msj_ttt.setText("El juego ha terminado :)");
             enJuego = false;
+            return;
         }
 
         if (this.vsBot) {
